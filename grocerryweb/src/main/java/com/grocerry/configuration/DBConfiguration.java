@@ -26,7 +26,7 @@ import com.grocerry.model.User;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("com.sports.configuration")
+@ComponentScan("com.grocerry.DBConfiguration")
 public class DBConfiguration {
 
 	@Bean(name="dataSource")
