@@ -30,6 +30,9 @@ public class Product {
 	@Min(value=10,message="Minimum price is 10")
 	
 	private double price;
+	int categoryid;
+	int supplierid;
+	
 	
 	@ManyToOne
 	private Category category;
@@ -78,6 +81,18 @@ public class Product {
 	}
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
+	}
+	public int getCategoryid() {
+		return categoryid;
+	}
+	public void setCategoryid(int categoryid) {
+		this.categoryid = categoryid;
+	}
+	public int getSupplierid() {
+		return supplierid;
+	}
+	public void setSupplierid(int supplierid) {
+		this.supplierid = supplierid;
 	}
 	
 	

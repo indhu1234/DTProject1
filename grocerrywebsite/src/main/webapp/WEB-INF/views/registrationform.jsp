@@ -11,53 +11,53 @@
 
 <c:url value='/all/registercustomer' var="url"></c:url>
 <form:form action="${url }" modelAttribute="customer">
-<div class="boxed" style="border:1px solid">
+ <div class="boxed" style="border:1px solid">  
 Enter Customer Details
 
-<div class="form-group">
+<div class="form-group"> 
 <form:label path="firstname">Enter Firstname</form:label>
 <form:input path="firstname" class="form-control"></form:input>
-<form:errors path="firstname" ></form:errors>
-</div>
+<form:errors path="firstname"></form:errors>
+ </div>  
 
 
-<div class="form-group">
+  <div class="form-group">  
 <form:label path="lastname">Enter Lastname</form:label>
 <form:input path="lastname"  class="form-control"></form:input>
-</div>
+  </div>  
 
 
-<div class="form-group">
+ <div class="form-group">  
 <form:label path="email">Email</form:label>
 <form:input path="email" type="email" class="form-control" title="Please Enter Valid Email Address"></form:input>
 <form:errors path="email" cssStyle="color:red"></form:errors>
 <span style="color:red">${duplicateEmail }</span>
-</div>
+ </div>  
 
-<div class="form-group">
+ <div class="form-group">  
 <form:label path="phonenumber">PhoneNumber</form:label>
 <form:input path="phonenumber"  class="form-control"></form:input>
 <form:errors path="phonenumber" cssStyle="color:red"></form:errors>
-</div>
+</div>  
 
 
-<div class="boxed" style="border:1px solid">
+<div class="boxed" style="border:1px solid">  
 Enter login credentials
-<div class="form-group">
+ <div class="form-group"> 
 <form:label path="user.username">Username</form:label>
 <form:input path="user.username"  class="form-control"></form:input>
 <form:errors path="user.username" cssStyle="color:red"></form:errors>
 <span style="color:red">${duplicateUsername }</span>
 </div>
 
-<div class="boxed" style="border:1px solid">
+<div class="boxed" style="border:1px solid">  
 
-<div class="form-group">
+ <div class="form-group">  
 <form:label path="user.password">Password</form:label>
 <form:input path="user.password" type="password" class="form-control"></form:input>
 <form:errors path="user.password" cssStyle="color:red"></form:errors>
-</div>
-</div>
+ </div> 
+ </div>  
 
 
 Enter Billing Address
